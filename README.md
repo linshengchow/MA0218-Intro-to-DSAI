@@ -66,17 +66,17 @@ Predict the nightly price of an Airbnb listing from listing characteristics and 
 
 Test-set confusion matrix:
 
-![Classification test confusion matrix](Mini%20Project/README-images/classification-confusion-matrix.png)
+![Classification test confusion matrix](README-images/classification-confusion-matrix.png)
 
 Feature-importance analysis:
 
-![Classification feature importance](Mini%20Project/README-images/classification-feature-importance.png)
+![Classification feature importance](README-images/classification-feature-importance.png)
 
 ### Regression
 
 Actual versus predicted values for the regression models:
 
-![Regression actual versus predicted values](Mini%20Project/README-images/regression-actual-vs-predicted.png)
+![Regression actual versus predicted values](README-images/regression-actual-vs-predicted.png)
 
 ## Requirements
 
