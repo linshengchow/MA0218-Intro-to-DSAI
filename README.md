@@ -22,6 +22,8 @@ Notebook: [`MINI PROJECT (CLASSIFICATION).ipynb`](MINI%20PROJECT%20%28CLASSIFICA
 
 Predict the binary `host_is_superhost` outcome and investigate which host, listing, review, and booking-related criteria are most associated with superhost status.
 
+Although Airbnb’s superhost requirements are publicly available, this analysis examines how strongly different host and listing characteristics are associated with superhost status in the Seattle dataset. The results can help hosts prioritise improvements and assess whether the published criteria are reflected in real-world listing data.
+
 ### Main workflow
 
 - Load and inspect listing and calendar data.
@@ -42,6 +44,8 @@ Notebook: [`MINI PROJECT (REGRESSION).ipynb`](MINI%20PROJECT%20%28REGRESSION%29.
 ### Objective
 
 Predict the nightly price of an Airbnb listing from listing characteristics and host or review information.
+
+This analysis can help new hosts set a fair and competitive price for their property. Guests can also use the predicted price as a reference point when deciding whether a listing represents good value.
 
 ### Main workflow
 
@@ -112,4 +116,5 @@ Some original notebook cells contain machine-specific Windows paths. Update thos
 - The analysis is based on a historical Seattle Airbnb snapshot and may not represent current listings or pricing.
 - Median imputation and feature selection were performed directly in the notebooks rather than through reusable preprocessing pipelines.
 - The regression target is log-transformed, so metrics calculated before inverse transformation are on the log-price scale.
+- `review_scores_rating` was not identified by the model as an important determining factor of superhost status. One possible explanation is that review scores are concentrated at a high level, with a median of 96 across listings, leaving relatively little variation for the model to use to distinguish superhosts from other hosts. This does not mean review quality is unimportant; it means its predictive contribution is limited in this dataset and model.
 - Results depend on the selected features, split seed, class-balancing approach, and hyperparameters.
